@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutIcons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAbout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2About"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_btn_logo_about"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt_title_navigation_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/title_navigation"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+            <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_hector_about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/hector" />
+
+        <MultiAutoCompleteTextView
+            android:textColor="@color/black"
+            android:id="@+id/txt_note_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_about" />
+
+        <ImageView
+            android:id="@+id/img_list_about"
+            android:layout_width="293dp"
+            android:layout_height="254dp"
+            android:gravity="start"
+            android:src="@drawable/listabout" />
+
+        <ImageView
+            android:id="@+id/img_contact_about"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:src="@drawable/contact" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3About"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_btn_facebook_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/img_btn_twitter_about"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/img_btn_instagram_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/img_btn_youtube_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/youtube" />
+
+            <ImageView
+                android:id="@+id/img_btn_linkedin_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/linkedin" />
+
+            <ImageView
+                android:id="@+id/img_btn_whatsapp_about"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/whatsapp" />
+
+            <ImageView
+                android:id="@+id/img_btn_email_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/email" />
+
+            <ImageView
+                android:id="@+id/img_btn_phone_about"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/phone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

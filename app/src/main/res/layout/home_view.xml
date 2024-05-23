@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_logo_home"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="40dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2Home"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_flipaclip_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/flipaclip" />
+
+            <ImageView
+                android:id="@+id/img_btn_capcut_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/capcut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3Home"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_reverse_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                android:src="@drawable/reverse" />
+
+            <ImageView
+                android:id="@+id/img_btn_stopmotion_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                android:src="@drawable/stopmotion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4Home"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_chromavid_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/chromavid" />
+
+            <ImageView
+                android:id="@+id/img_btn_about_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:src="@drawable/about"
+                android:clickable="true"
+                android:contentDescription="Acerca de..."/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
